@@ -8,6 +8,7 @@ jobs:
         - script: echo "slack-service will send it to the room specified"
         - script: echo "test template message" > $JOB_STATE/slack-tester.env
         - script: echo "test template message" > $JOB_STATE/some_other_file.env
+        - script: echo "copied sample text to $JOB_STATE/slack-tester.env"
 
   - name: slack-service_runCI
     type: runCI
