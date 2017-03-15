@@ -1,0 +1,13 @@
+jobs:
+  - name: slack-tester
+    type: runSh
+    steps:
+      - TASK:
+        - script: echo "this should generate a message and the destination room"
+        - script: echo "that it will pass to the slack-service"
+        - script: echo "slack-service will send it to the room specified"
+
+  - name: slack-service_runCI
+    type: runCI
+    steps:
+      - IN: slack-tester

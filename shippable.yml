@@ -1,0 +1,6 @@
+language: none
+
+build:
+  ci:
+    - echo "This project is not to be used as CI"
+    - echo "This should be used as a runSh job"
