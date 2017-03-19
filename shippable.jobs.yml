@@ -16,10 +16,16 @@ jobs:
       - IN: slack-tester
       - IN: slack-service-repo
       - TASK:
-        - script: echo "running slack service runSh"
+        - script: echo "running slack service runSh\n"
+
         - script: echo 'cat "IN/slack-tester/runSh/slack-tester.env"'
         - script: cat "IN/slack-tester/runSh/slack-tester.env"
-        - sciprt: echo 'ls "IN/slack-tester/runSh"'
-        - sciprt: ls "IN/slack-tester/runSh"
+
+        - script: echo '\nls "IN/slack-tester/runSh"'
+        - script: ls "IN/slack-tester/runSh"
+
+        - script: echo "\nRunning scipt"
+        - script: bash IN/slack-service-repo/gitRepo/script.sh
+
         - script: echo "sleeping for 4 min"
-        - sciprt: sleep 240
+        - script: sleep 240
