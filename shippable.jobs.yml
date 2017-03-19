@@ -16,16 +16,4 @@ jobs:
       - IN: slack-tester
       - IN: slack-service-repo
       - TASK:
-        - script: echo "running slack service runSh\n"
-
-        - script: echo 'cat "IN/slack-tester/runSh/slack-tester.env"'
-        - script: cat "IN/slack-tester/runSh/slack-tester.env"
-
-        - script: echo '\nls "IN/slack-tester/runSh"'
-        - script: ls "IN/slack-tester/runSh"
-
-        - script: echo "\nRunning scipt"
-        - script: bash IN/slack-service-repo/gitRepo/script.sh
-
-        - script: echo "sleeping for 4 min"
-        - script: sleep 240
+        - script: ./slack-service-runsh.sh
