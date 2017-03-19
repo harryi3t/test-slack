@@ -17,4 +17,4 @@ jobs:
       - IN: slack-service-repo
       - IN: slack-test-repo
       - TASK:
-        - script: cd IN/slack-test-repo && ./slack-service-runsh.sh
+        - script: cd IN/slack-test-repo/gitRepo && ./slack-service-runsh.sh
