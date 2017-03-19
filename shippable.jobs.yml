@@ -14,6 +14,7 @@ jobs:
     type: runSh
     steps:
       - IN: slack-tester
+      - IN: slack-service-repo
       - TASK:
         - script: echo "running slack service runSh 2"
         - script: echo "JOB_STATE $JOB_STATE"

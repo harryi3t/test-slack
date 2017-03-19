@@ -1,0 +1,6 @@
+resources:
+  - name: slack-service-repo
+    type: gitRepo
+    integration: git
+    pointer:
+      sourceName: harryi3t/slack-service
