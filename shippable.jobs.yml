@@ -19,3 +19,5 @@ jobs:
         - script: echo "JOB_STATE $JOB_STATE"
         - script: echo "message from slack-tester"
         - script: cat "IN/slack-tester/runSh/slack-tester.env"
+        - sciprt: ls "IN/slack-tester/runSh"
+        - sciprt: sleep 240
