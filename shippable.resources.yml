@@ -4,3 +4,9 @@ resources:
     integration: git
     pointer:
       sourceName: harryi3t/slack-service
+
+  - name: slack-test-repo
+    type: gitRepo
+    integration: git
+    pointer:
+      sourceName: harryi3t/test-slack
