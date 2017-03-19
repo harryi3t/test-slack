@@ -17,8 +17,8 @@ main() {
   format "$BLUE" "Running scipt"
   cd /build/IN/slack-service-repo/gitRepo && ./script.sh
 
-  format "$BLUE" "sleeping for 4 min"
-  sleep 240
+  format "$BLUE" "sleeping for 2 min"
+  sleep 120
 }
 
 main

@@ -10,3 +10,10 @@ resources:
     integration: git
     pointer:
       sourceName: harryi3t/test-slack
+
+  - name: mesg-and-token
+    type: params
+    version:
+      params:
+        message: "This is a sample message."
+        token: "this is fake token. Please override this token using the params resource in SPOG after encrypting from subs|proj settings page"
