@@ -4,6 +4,7 @@ jobs:
     steps:
       - IN: mesg-and-token
       - IN: slack-test-repo
+        switch: off
       - TASK:
         - script: cd IN/slack-test-repo/gitRepo && ./slack-tester-runsh.sh
 
