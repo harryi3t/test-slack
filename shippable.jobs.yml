@@ -12,6 +12,8 @@ jobs:
     steps:
       - IN: slack-tester
       - IN: slack-service-repo
+        switch: off
       - IN: slack-test-repo
+        switch: off
       - TASK:
         - script: cd IN/slack-test-repo/gitRepo && ./slack-service-runsh.sh
