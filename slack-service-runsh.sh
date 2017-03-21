@@ -7,8 +7,6 @@ format() {
 
 main() {
   format "$YELLOW" "Starting slack-service-runsh script"
-
-  cat /build/IN/slack-tester/runSh/slack-tester.env
   source /build/IN/slack-tester/runSh/slack-tester.env
 
   format "$BLUE" "Running scipt"
