@@ -15,10 +15,7 @@ main() {
   ls "/build/IN/slack-tester/runSh"
 
   format "$BLUE" "Running scipt"
-  cd /build/IN/slack-service-repo/gitRepo && ./script.sh
-
-  format "$BLUE" "sleeping for 2 min"
-  sleep 120
+  cd /build/IN/slack-service-repo/gitRepo && ./post.sh
 }
 
 main
