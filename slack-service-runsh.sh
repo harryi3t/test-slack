@@ -12,7 +12,7 @@ main() {
   source /build/IN/slack-tester/runSh/slack-tester.env
 
   format "$BLUE" "Running scipt"
-  cd /build/IN/slack-service-repo/gitRepo && ./post.sh $
+  cd /build/IN/slack-service-repo/gitRepo && ./post.sh $webhook_param $channel_param $message_param
 }
 
 main
